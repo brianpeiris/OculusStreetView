@@ -105,7 +105,7 @@ GSVPANO.PanoLoader = function (parameters) {
 					url = `https://lh3.ggpht.com/p/${_panoId}=x${x}-y${y}-z${+_zoom+1}`;
 				}
 				else {
-					url = 'http://maps.google.com/cbk?output=tile&panoid=' + _panoId + '&zoom=' + _zoom + '&x=' + x + '&y=' + y;
+					url = 'https://maps.google.com/cbk?output=tile&panoid=' + _panoId + '&zoom=' + _zoom + '&x=' + x + '&y=' + y;
 				}
 				if (!cache) url += '&' + Date.now();
 				(function (x, y) {
